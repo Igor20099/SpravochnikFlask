@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="h1 text-center">Шаблоны страниц</h1>
+                <div>Давайте создадим две страницы. Для этого создадим папку <b>templates</b>(именно так должна называться папка для шаблонов страниц) рядом с файлом <b>app.py</b> и создадим две страницы <b>home.html</b> и <b>about.html</b></div>
+                <img src="../img/templates/templates.png" class="w-100" alt="">
+                <div>Далее в файле <b>app.py</b>из модуля <b>flask</b> импортируем метод <b>render_template</b></div>
+                <img src="../img/templates/templates2.png" class="w-100" alt="">
+                 <div>Добавим такие методы:</div>
+                 <img src="../img/templates/templates3.png" class="w-100" alt="">
+                 <div>Разебрем его подробнее. Первый метод <b>home</b> c дикоратором <b>@app.route('/')</b> которая отправляет на главную страницу.В нем мы возваращаем с помощью метода <b>render_template</b> наш html шаблон <b>home.html</b> который находиться в папке <b>templates</b>. Второй метод отправляет нас на страницу <b>about</b> и с помошью метода <b>render_template</b> загружает страницу <b>about.html</b> из папки <b>templates</b></div>
+                 <div>Добавим в наш html шаблон <b>home.html</b> заголовок <b>Главная страница</b>, а в <b>about.html</b> заголовок <b>О нас</b></div>
+                 <img src="../img/templates/templates4.png" class="w-100" alt="">
+                 <br>
+                 <img src="../img/templates/templates5.png" class="w-100" alt="">
+                 <div>Запустим наш модуль <b>app.py</b> c помощью <b>python app.py</b> и посмотрим на результат</div>
+                 <div>Главная страница</div>
+                 <img src="../img/templates/templates6.png" class="w-100" alt="">
+                 <div>Страница <b>/about</b> </div>
+                 <img src="../img/templates/templates7.png" class="w-100" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="h1 text-center">Установка Flask</h1>
+                <div>Теперь при активированным виртуальным окружением установим <b>Flask</b>. Для этого в терминале введите <b>pip install Flask</b>. После установки создайте файл <b>app.py</b> и импортируем класс <b>Flask</b> из модуля <b>flask</b>. Также создадим переменную <b>app</b> в которую присвоим класс Flask и в качестве параметра передадим имя нашего модуля с помощью <b>__name__</b></div>
+                <img src="../img/setupflask/setupflask.png" class="w-100" alt="">
+                <div>Так же с помощью конструкции  <br> <b>if __name__ == '__main__": <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;app.run(debug=True)</b><br> мы говорим что это запускаемый модуль и с помощью метода <b>run</b> у <b>app</b> мы запускаем локальный сервер и для отображения ошибок параметром в метод <b>run</b> добалвяем <b>debug=True</b>(когда вы сделайте деплой на сервер нужно поставить этот параметр в <b>False</b>)</div>
+                <div>Теперь запустим наш локальный сервер для этого запустим наш файл <b>app.py</b>.Введите в терминале <b>python app.py</b>. После этого в консоли отобразиться локальный сервер по которому мы можем перейти</div>
+                <img src="../img/setupflask/setupflask2.png" class="w-100" alt="">
+                <div>Если мы перейдем то на странице будет ошибка потому что мы еще не создавали страницы</div>
+                <img src="../img/setupflask/setupflask3.png" class="w-100" alt="">
+                <div>Добавим нашую первую страницу которая будет выводить на страницу <b>Hello world</b></div>
+                <img src="../img/setupflask/setupflask4.png" class="w-100" alt="">
+                <div>Разберем подробнее. С помощью декоратора <b>@app.route(адрес_страницы)</b> мы указываем по какому адресу будет отображаться страница. Так вот '/'' озночает главная cтраница.Далее мы создаем метод <b>index</b> который возвращает нам текст <b>Hello World</b></div>
+                <img src="../img/setupflask/setupflask5.png" class="w-100" alt="">
+                <div>Чтобы отключить локальный сервер в терминале нажмите сочитание клавиш <b>CTRL + C</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
